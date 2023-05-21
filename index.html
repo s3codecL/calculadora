@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculadora</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="/menu_de_opciones/assets/css/style.css">
+
+
+</head>
+
+<body><br>
+    <div class="text-bg-success p-xxl-4 text-center">
+        <h1><strong>Calculadora</strong></h1>
+    </div><br>
+
+    <section class="text-lg-center">
+        <div>
+            <input type="text" id="input">
+        </div>
+        <div>
+            <button class="btn btn-outline-success" onclick="addNumber('1')">1</button>
+            <button class="btn btn-outline-success" onclick="addNumber('2')">2</button>
+            <button class="btn btn-outline-success" onclick="addNumber('3')">3</button>
+            <button class="btn btn-outline-success" onclick="addOperator('+')">+</button>
+        </div>
+        <div>
+            <button class="btn btn-outline-success" onclick="addNumber('4')">4</button>
+            <button class="btn btn-outline-success" onclick="addNumber('5')">5</button>
+            <button class="btn btn-outline-success" onclick="addNumber('6')">6</button>
+            <button class="btn btn-outline-success" onclick="addOperator('-')">-</button>
+        </div>
+        <div>
+            <button class="btn btn-outline-success" onclick="addNumber('7')">7</button>
+            <button class="btn btn-outline-success" onclick="addNumber('8')">8</button>
+            <button class="btn btn-outline-success" onclick="addNumber('9')">9</button>
+            <button class="btn btn-outline-success" onclick="addOperator('*')">*</button>
+        </div>
+        <div>
+            <button class="btn btn-outline-success" onclick="addNumber('0')">0</button>
+            <button class="btn btn-outline-success" onclick="addDecimal()">.</button>
+            <button class="btn btn-outline-success" onclick="clearInput()">C</button>
+            <button class="btn btn-outline-success" onclick="addOperator('/')">/</button>
+        </div>
+        <div>
+            <button class="btn btn-outline-success" onclick="calculate()" id="equal">=</button>
+        </div>
+    </section><br><br> 
+
+    <div class="text-lg-center">
+        
+        <a type="button" class="btn btn-outline-success"href="/calculadora/page2.html">Salir</a>
+        
+    </div>    
+
+    <script type="text/javascript" src="/calculadora/assets/js/script.js"></script>
+
+
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<!--evento onclick llaman a las funciones correspondientes para agregar números, puntos decimales, operadores y calcular el resultado. 
+    El resultado se muestra en el input con el id "input".-->
